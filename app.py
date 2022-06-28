@@ -1,7 +1,7 @@
 import os
 from flask import jsonify, Flask, send_file, request
 from flask_cors import CORS
-from . import fonts
+import fonts
 
 app = Flask(__name__)
 CORS(app, resources={r"/figma/*": {"origins": "https://www.figma.com"}})
